@@ -19,24 +19,25 @@ int main()
 		{
 			cin>>a[i];
 		}
-		for(int i=0;i<n-2;i++)
+		for(int i=1;i<n-1;i++)
 		{
-			for(int j = i+1;j<n-1;j++)
+			int l = i-1,r = i+1;
+			while(l>=0 && r<= n-1)
 			{
-				for(int k = j+1;k<n;k++)
+				if(a[l] < a[i] && a[i] > a[r])
 				{
-					if(a[j]>a[i] && a[j]>a[k])
-					{
-						flag = true;
-						x = i;
-						y = j;
-						z = k;
-						break;
-					}
+					flag = true;
+					x = l;
+					y = i;
+					z = r;
+					break;
 				}
-				if(flag)break;
+				l--;
+				r++;
 			}
-			if(flag)break;
+			if(flag){
+				break;
+			}
 		}
 		if(flag)
 		{

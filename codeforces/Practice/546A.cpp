@@ -1,10 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define li int64_t
 int main()
 {
-    int a,n,money;
+    long long int a,n,money;
     cin>>a>>money>>n;
-    int cost = a*n*(n+1);
+    long long int cost = a*n*(n+1);
     cost/=2;
-    cout<<cost-money;
+    long long int ans = ((cost-money)>0)? (cost-money) : 0;
+    cout<< ans;
 }
+
+
