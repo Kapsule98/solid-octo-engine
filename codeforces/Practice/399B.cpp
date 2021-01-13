@@ -33,4 +33,4 @@ int main()
 		}
 	}
 	cout<<cost<<endl;
-}
+}//3 8 3 2 4
