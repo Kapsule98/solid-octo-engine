@@ -1,0 +1,7 @@
+RECURSION
+
+1 Know what fn should do
+2 Pick a subproblem and assume function already works on it
+3 Use answer from subproblem to calculate answer of problem
+4 Solve for termination condition (Base Case) Solution to the simplest sub problem
+
