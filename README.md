@@ -8,3 +8,9 @@
 3. Trying to access something pointed to by nullptr  (for example in linked list trying to get next node of last node) <br>
 4. Large static memory allocaton <br>
 5. Check for segmentation faults <br>
+
+<h4> 2 reasons for seg fault
+
+1. Dangling pointer
+2. Accessing memory that is not there
+3. Accessing invalid indices
