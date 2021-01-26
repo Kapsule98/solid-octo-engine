@@ -1,0 +1,23 @@
+RECURSION
+
+1 Know what fn should do
+2 Pick a subproblem and assume function already works on it
+3 Use answer from subproblem to calculate answer of problem
+4 Solve for termination condition (Base Case) Solution to the simplest sub problem
+
+
+
+HASHING
+
+DJB2 Hash function
+
+unsigned long hash (unsigned char* S)
+{
+  unsigned long hash = 5381;
+  int c;
+  while(c = *S++)
+  {
+    hash = (( hash << 5 ) + hash ) + c;   // hash = hash*33 + c 
+  }
+  return hash;
+}
